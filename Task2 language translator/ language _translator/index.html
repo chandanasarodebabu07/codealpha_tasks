@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌐 Language Translator</h1>
+
+    <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+    <div class="selectors">
+        <select id="sourceLang"></select>
+        <span>➡</span>
+        <select id="targetLang"></select>
+    </div>
+
+    <button onclick="translateText()">Translate</button>
+
+    <textarea id="outputText" placeholder="Translated text..." readonly></textarea>
+
+    <div class="buttons">
+        <button onclick="copyText()">Copy</button>
+        <button onclick="speakText()">🔊 Speak</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
